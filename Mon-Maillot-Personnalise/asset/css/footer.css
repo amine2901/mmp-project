@@ -1,0 +1,265 @@
+.footer {
+    height: 60vh;
+    width: 100%;
+    background: #95F0C8;
+    position: relative;
+}
+
+.title-footer {
+    font-weight: bold;
+    font-size : 1.15em;
+    margin-bottom : 7%;
+    color : black;
+}
+
+.title-footer-reseau {
+    margin-top : 12%;
+}
+
+.menu-footer {
+    display : flex;
+    justify-content: space-around;
+    padding : 1%;
+    /* border : 1px solid red; */
+}
+
+.content-menu-footer {
+    flex : 1;
+    /* border : 1px solid blue; */
+    margin : 2%;
+    padding : 2%;
+}
+
+address p { 
+    color : black;
+    font-size : .9em;
+}
+
+.lien-footer { 
+    text-decoration: none;
+}
+
+
+.lien-footer a { 
+    text-decoration: none;
+    color : black;
+    font-size : .9em;
+}
+
+.lien-footer a:hover { 
+    text-decoration: underline;  
+}
+
+a.lien-logo {
+    text-decoration: none!important; 
+}
+
+
+.linkedin, 
+.twitter, 
+.instagram, 
+.facebook {
+    height : 45px;
+    /* border : 2px solid red; */
+}
+
+.linkedin:hover, 
+.twitter:hover, 
+.instagram:hover, 
+.facebook:hover { 
+    transform: rotate(5deg);
+}
+
+
+.Copyright {
+    color : black;
+    font-size: 0.9em;
+    position: absolute;
+    top: 80%;
+    left : 40%;
+}
+
+
+
+/* Responsive footer */
+
+ /* X-Small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) {
+    /* body{
+        background-color: pink;
+    } */
+
+    .footer {
+        height: 55vh; 
+    }
+    
+    .display-none {
+        display: none;
+    }
+
+    .title-footer {
+        font-size : 1.05em;
+        margin-bottom : 5%;
+        /* border : 3px solid green; */
+    }
+    
+    .title-footer-reseau {
+        margin-top : 3%;
+        /* border : 3px solid green; */
+    }
+    
+    .menu-footer {
+        flex-wrap: wrap;
+        padding : 3%;
+        /* border : 4px solid red; */
+    }
+     
+    
+    address p { 
+        font-size : .85em;
+    }
+       
+    
+    .lien-footer a { 
+        font-size : .85em;
+    }
+        
+    
+    .linkedin, 
+    .twitter, 
+    .instagram, 
+    .facebook {
+        height : 25px;
+        /* border : 2px solid red; */
+    }
+    
+    
+    .Copyright {
+        color : black;
+        font-size: 0.9em;
+        position: absolute;
+        top: 78%;
+        left : 20%;
+    }
+    .Copyright::after {
+        display : block;
+        text-align: center;
+        content : ' 1 rue des templiers, 75019 Paris';
+        }
+
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* body{
+        background-color: blue;
+    } */
+
+    .footer {
+        height: 50vh;   
+    }
+
+    .display-none {
+        display: none;
+    }
+    .title-footer {
+        font-size : .9em;
+    }
+    
+    .lien-footer a { 
+        font-size : .85em;
+    }
+
+    .content-menu-footer {
+        padding : .2%;
+    }
+
+    .linkedin, 
+    .twitter, 
+    .instagram, 
+    .facebook {
+        height : 37px;
+    }
+
+    .Copyright {
+        color : black;
+        font-size: 0.9em;
+        position: absolute;
+        top: 75%;
+        left : 25%;
+    }
+
+    .Copyright::after {
+        display : block;
+        text-align: center;
+        content : ' 1 rue des templiers, 75019 Paris';
+        }
+
+}
+/* 
+// Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* body{
+        background-color: yellow;
+    }  */
+
+    .display-none {
+        display: none;
+    }
+
+    .title-footer {
+        font-size : 1em;
+    }
+
+    .content-menu-footer {
+        padding : 1%;
+    }
+
+    .linkedin, 
+    .twitter, 
+    .instagram, 
+    .facebook {
+        height : 47px;
+    }
+    .Copyright::after {
+        display : block;
+        text-align: center;
+        content : ' 1 rue des templiers, 75019 Paris';
+        }
+}
+
+
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* body{
+        background-color: red;
+    }  */
+
+    .display-none {
+        display: none;
+    }
+
+    .linkedin, 
+    .twitter, 
+    .instagram, 
+    .facebook {
+        height : 50px;
+    }
+
+    .Copyright::after {
+        display : block;
+        text-align: center;
+        content : ' 1 rue des templiers, 75019 Paris';
+        }
+
+
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    /* body{
+        background-color: green;
+    } */
+    
+}
+
+}

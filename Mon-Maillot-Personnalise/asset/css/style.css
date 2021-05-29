@@ -1,0 +1,1814 @@
+/*----------------------------------------- RESET CSS ------------------------------------------------------------------------- */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ------------------------- FONT COMMUNE A TOUTES LES PAGES -----------------------------------------*/
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+
+
+
+/* --------------------------------PAGE ACCUEIL-------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+
+.title-accueil {
+    font-size: 1.5em;
+    text-align : center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top : 1%;
+}
+
+.introduction {
+    /* + page contact */
+    font-size: 1em;
+    text-align : center;
+    margin : 1% auto;
+    width: 50%;
+}
+
+.title-accueil-2 {
+    font-size: 1.5em;
+    text-align : center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top : 5%;
+}
+
+
+.presentation-maillots, 
+.presentation-personnalisation, 
+.presentation-gamme-famille {
+    padding : 2%;
+    margin-bottom : 1%;
+     /* border : 2px solid red; */
+    
+}
+
+
+
+
+
+
+.bg-section-produits-accueil {
+    background-color: rgb(243, 239, 239);
+    padding : 4%;
+}
+
+
+.maillots-1, 
+.personnalisation-accueil, 
+.gamme-accueil {
+    display : flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    margin : 8vh auto;
+    /* border : 2px solid blue; */
+  
+}
+
+
+.maillots  {
+    display : flex;
+    flex-direction: column;
+    padding : 2%;
+    background: #000;
+    color : white;
+    /* border : 2px solid yellow;    */
+    
+}
+
+
+.photos-maillots {
+    height: 240px;
+    /* border : 1px solid black; */
+}
+
+.product-description, 
+.product-description h2, 
+.product-description p {
+    margin-top : 5%;
+}
+
+.product-description p span { 
+    font-weight : bold;
+}
+
+.bouton-decouvrir-maillots, 
+.bouton-decouvrir-personnalisation
+{
+   /* border : 3px solid purple; */
+   width: 100%;
+} 
+
+
+.decouvrir-maillots,
+.decouvrir-personnalisation {
+    background: #95F0C8;
+    border : 1px solid #95F0C8;
+    border-radius : 2px;
+    width: fit-content;
+    font-weight : 900;
+    margin-left : 40%;
+    margin-bottom : 5%;
+    padding : 2%;
+    /* border :1px solid red; */    
+}
+
+
+
+.decouvrir-maillots a, 
+.decouvrir-personnalisation a,
+.decouvrir-gamme-famille a {
+    text-decoration : none;
+    color : white;
+}
+
+.perso-accueil {
+    flex : 1;
+    padding : 3%;
+    /* border : 2px solid yellow; */
+}
+
+.perso-title {
+    font-weight : bold;
+    text-align: center;
+    margin-bottom : 7%;
+    text-transform : uppercase;
+} 
+
+.fa-pen-nib{
+    font-size : 5em;
+    width: 100%;
+    margin-top : 6%;
+    transform: translate(100px);
+    /* border : 3px solid green; */
+}
+
+
+.fa-comment-alt {
+    font-size : 5em;
+    margin-top : 6%;
+    transform: translate(110px);
+}
+
+
+
+.fa-tint {
+    font-size : 5em;
+    margin-top : 6%;
+    transform: translate(125px);
+    /* border : 3px solid green; */
+}
+
+.perso-accueil img {
+   width: 100%;
+}
+
+.perso-accueil p {
+    margin-top : 9%;
+}
+
+
+
+
+
+
+/******************* RESPONSIVE PAGE ACCUEIL ************************/
+
+ /* X-Small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) {
+    /* body{
+        background-color: pink;
+    } */
+
+    .title-accueil-2 {
+        font-size: 1.3em;
+    }
+
+    .introduction {
+        font-size: .9em; 
+    }
+
+ 
+    .personnalisation-accueil, 
+    .gamme-accueil {
+        flex-direction : column;
+    /* border : 2px solid blue; */
+}
+
+    .title-accueil {
+        font-size: 1.3em;
+    }
+
+
+    .maillots  {
+        display : block;
+        padding : 8%;
+        /* border : 1px solid red; */
+        margin-bottom : 6%;
+    }
+
+    .photos-maillots {
+        height: 220px;
+        margin : 2% auto;
+        /* border : 1px solid yellow; */
+    }
+
+
+    .decouvrir-maillots,
+    .decouvrir-personnalisation {
+        margin-left : 30%;
+        /* border :1px solid red;     */
+    }
+
+
+    .perso-title {
+        font-weight : bold;
+        text-align: center;
+        margin-top : 7%;
+        margin-bottom : 2%;
+        text-transform : uppercase;
+    } 
+
+    .fa-pen-nib{
+        font-size : 3em;
+        display : block;
+        width: fit-content;
+        margin-top : 1%;
+        transform: translate(170px);
+        /* border : 3px solid green; */
+    }
+
+
+    
+
+    .fa-comment-alt {
+        font-size : 3em;
+        margin-top : 1%;
+        transform: translate(180px);
+    }
+
+
+
+    .fa-tint {
+        font-size : 3em;
+        margin-top : 1%;
+        transform: translate(190px);
+        /* border : 3px solid green; */
+    }
+
+   
+    .perso-accueil p {
+        font-size : .9em;
+    }
+
+
+      
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* body{
+        background-color: blue;
+    } */
+    .title-accueil-2 {
+        font-size: 1.3em;
+    }
+
+    .introduction {
+        font-size: .9em; 
+    }
+
+
+    .title-accueil {
+        font-size: 1.3em;
+    }
+
+    .photos-maillots {
+        height: 150px;
+        margin : 2% auto;
+        /* border : 1px solid yellow; */
+    }
+
+
+    .decouvrir-maillots,
+    .decouvrir-personnalisation {
+        margin-left : 30%;
+        /* border :1px solid red;     */
+    }
+
+
+    .perso-title {
+        font-weight : bold;
+        text-align: center;
+        margin-top : 7%;
+        margin-bottom : 2%;
+        text-transform : uppercase;
+    } 
+
+    .fa-pen-nib{
+        font-size : 3em;
+        margin-top : 1%;
+        transform: translate(50px);
+        /* border : 3px solid green; */
+    }
+
+
+    .fa-comment-alt {
+        font-size : 3em;
+        margin-top : 1%;
+        transform: translate(60px);
+    }
+
+
+
+    .fa-tint {
+        font-size : 3em;
+        margin-top : 1%;
+        transform: translate(70px);
+        /* border : 3px solid green; */
+    }
+
+   
+    .perso-accueil p {
+        font-size : .9em;
+    }
+
+
+
+      
+}
+
+/* 
+// Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* body{
+        background-color: yellow;
+    }  */
+
+    .title-accueil-2 {
+        font-size: 1.3em;
+        /* border : 1px solid blue; */
+    }
+
+    .introduction {
+        font-size: .9em; 
+    }
+
+
+    .title-accueil {
+        font-size: 1.3em;
+    }
+
+
+    .photos-maillots {
+        height: 190px;
+        margin : 2% auto;
+    }
+
+    .decouvrir-maillots,
+    .decouvrir-personnalisation {
+        margin-left : 40%;
+        /* border :1px solid red;     */
+    }
+
+
+    .perso-title {
+        font-weight : bold;
+        text-align: center;
+        margin-top : 7%;
+        margin-bottom : 2%;
+        text-transform : uppercase;
+    } 
+
+    .fa-pen-nib{
+        font-size : 3em;
+        margin-top : 1%;
+        transform: translate(70px);
+        /* border : 3px solid green; */
+    }
+
+
+    .fa-comment-alt {
+        font-size : 3em;
+        margin-top : 1%;
+        transform: translate(80px);
+    }
+
+
+
+    .fa-tint {
+        font-size : 3em;
+        margin-top : 1%;
+        transform: translate(80px);
+        /* border : 3px solid green; */
+    }
+
+   
+    .perso-accueil p {
+        font-size : .9em;
+    }
+
+
+  
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* body{
+        background-color: red;
+    }   */
+
+    .photos-maillots {
+        height: 230px;
+        margin : 2% auto;
+    }
+
+    .decouvrir-maillots,
+    .decouvrir-personnalisation {
+        margin-left : 40%;
+        /* border :1px solid red;     */
+    }
+
+
+    .fa-pen-nib{
+        transform: translate(80px);
+        /* border : 3px solid green; */
+    }
+
+    .fa-comment-alt {
+        transform: translate(80px);
+    }
+
+    .fa-tint {
+
+        transform: translate(90px);
+        /* border : 3px solid green; */
+    }
+
+   
+    .perso-accueil p {
+        font-size : .9em;
+    }
+             
+ 
+}
+
+
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    /* body{
+        background-color: green;
+    } */
+}
+
+
+/* -------------------------------------PAGE PRODUITS--------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+
+.title-produits {
+    font-size: 1.5em;
+    text-align : center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top : 8%;
+    margin-bottom : 6%;
+}
+
+.container-maillots-produits {
+    width: 80%;
+    margin : 3vh auto;
+    display: flex;
+    justify-content : space-evenly;
+    padding : 4%;
+    flex-wrap: wrap;
+    /* border : 2px solid  green; */   
+    
+}
+   
+
+.data-products {
+   margin-bottom: 1.5vh;
+   margin-left: 7.3%;
+   font-size: 0.9em;
+   color: black;
+}
+
+#data-products {   
+    background-color: black;
+    color: #95F0C8;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 2px solid black;
+    margin-left: 30%;
+    border-radius: 2.5px;
+    padding: 2.8%;
+}
+
+.div-products{
+    background-color: rgb(243, 239, 239);
+    /* border: 2px solid black; */
+    margin: 2%;
+    flex: 1;
+    display: inline-block;
+    width: 28.7%;    
+} 
+
+.img-products{
+    height: 250px;
+    /* border: 2px solid red; */
+    margin-top: 5%;
+    margin-left: 7.3%;
+    /* box-shadow: 4px 4px 4px black; */
+    margin-bottom: 5%;
+} 
+
+
+/******************* RESPONSIVE PAGE PRODUITS ************************/
+
+ /* X-Small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) {
+    /* body{
+        background-color: pink;
+    } */
+    
+    .title-produits {
+        font-size: 1.3em;
+    }    
+
+    .div-products{
+        display : block;
+        /* border: 2px solid black; */
+        margin : 4% auto;
+        width: 100%;   
+        padding : 3%; 
+        } 
+
+    .img-products{
+        height: 220px;
+        border: 2px solid black;                 
+        } 
+
+            
+   
+
+      
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* body{
+        background-color: blue;
+    } */
+    .title-produits {
+        font-size: 1.3em;
+    }    
+
+    .div-products{
+        display : block;
+        /* border: 2px solid black; */
+        margin : 4% auto;
+        width: 100%;   
+        padding : 3%; 
+        } 
+
+    .img-products{
+        height: 220px;
+        border: 2px solid black;                 
+        } 
+
+
+
+      
+}
+
+/* 
+// Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* body{
+        background-color: yellow;
+    } 
+     */
+
+
+    #data-products {   
+        margin-left: 20%;
+        
+    }
+    .img-products{
+        height: 151px;
+        margin-top : 12%;
+        border : 2px solid black;
+    } 
+
+  
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* body{
+        background-color: red;
+    }   */
+            
+    #data-products {   
+        margin-left: 25%;
+        
+    }
+    .img-products{
+        height: 200px;
+        margin-top : 9%;
+        /* border : 2px solid black; */
+    } 
+
+             
+ 
+}
+
+
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    /* body{
+        background-color: green;
+    } */
+}
+
+
+
+/* ---------------------------------------PAGE PERSONNALISATION------------------------------------------ */
+/* ---------------------------------------------------------------------------------------------------- */
+
+
+.title-personnalisation {
+    font-size: 1.5em;
+    text-align : center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top : 8%;
+    margin-bottom : 6%;
+}
+
+.bloc-etapes {
+    width: 100%;
+    /* border : 1px solid green; */
+}
+
+.etapes-personnalisation  {
+    width: fit-content;
+    margin : auto;
+    /* border : 1px solid red; */
+}
+
+ 
+.presentation-page-personnalisation {
+    padding : 2%;
+    margin-bottom : 6%;
+     /* border : 2px solid red; */
+}
+
+
+
+.bg-section-personnalisation:first-of-type,
+.bg-section-personnalisation:last-of-type   {
+    background-color: #95F0C8;  
+    padding : 4%; 
+}
+
+.bg-section-personnalisation-black {
+    background-color: rgb(243, 239, 239);
+    padding : 4%; 
+}
+
+.bandeaux-personnalisation {
+    display : flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    margin : 8vh auto;
+    /* border : 2px solid blue; */
+}
+
+.perso-accueil {
+    flex : 1;
+    padding : 3%;
+}
+
+.perso-title {
+    font-weight : bold;
+    text-align: center;
+    margin-bottom : 7%;
+    text-transform : uppercase;
+} 
+
+.perso-accueil img {
+   width: 100%;
+}
+
+.perso-accueil p {
+    margin-top : 9%;
+}
+
+.btn-typo {
+    padding : 3.1%;
+    margin-top :6%;
+    background: black;
+    border : 1px solid black;
+    border-radius : 5px;
+    color : #95F0C8;  
+    font-weight : bold;
+    font-size: 1.6em;
+}
+
+.btn-color{
+    padding : 6%;
+    margin-top :6%;
+    background: black;
+    border : 1px solid black;
+    border-radius : 5px;
+    color : rgb(243, 239, 239);
+    font-weight : bold;
+    font-size: 1.6em;
+}
+
+.btn-msg{
+    padding : 5%;
+    margin-top :6%;
+    background: black;
+    border : 1px solid black;
+    border-radius : 5px;
+    color : #95F0C8;  
+    font-weight : bold;
+    font-size: 1.6em;
+}
+
+/******************* RESPONSIVE PAGE PERSONNALISATION ************************/
+
+ /* X-Small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) {
+    /* body{
+        background-color: pink;
+    } */
+
+    
+.title-personnalisation {
+    font-size: 1.3em;  
+}
+
+.bloc-etapes li {
+    font-size : .9em;
+}
+
+.presentation-page-personnalisation {
+    margin-top : 1%;
+    margin-bottom : 5%;
+     /* border : 2px solid red; */
+}
+
+.bg-section-personnalisation-black {
+  margin-top : 1%;
+  margin-bottom : 1%;
+}
+
+
+.bandeaux-personnalisation {
+    flex-direction : column;
+    /* border : 2px solid blue; */
+}
+
+
+.perso-title {
+    margin-bottom : 7%;
+    /* border : 2px solid red; */
+} 
+
+.perso-accueil p {
+    margin-top : 3%;
+    font-size : .9em;
+}
+
+.btn-typo {
+    padding : 3.1%;
+    margin-top :6%;
+    margin-left : 26%;
+    font-size: 1em;
+}
+
+.btn-color{
+    padding : 3.1%;
+    margin-top :6%;
+    margin-left : 28%;
+    font-size: 1em;
+}
+
+.btn-msg{
+    padding : 3.1%;
+    margin-top :6%;
+    margin-left : 30%;
+    font-size: 1em;
+}
+
+
+      
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* body{
+        background-color: blue;
+    }    
+     */
+.title-personnalisation {
+    font-size: 1.3em;  
+}
+
+.bloc-etapes li {
+    font-size : .9em;
+}
+
+.presentation-page-personnalisation {
+    margin-top : 1%;
+    margin-bottom : 5%;
+     /* border : 2px solid red; */
+}
+
+.bg-section-personnalisation-black {
+  margin-top : 1%;
+  margin-bottom : 1%;
+}
+
+
+.bandeaux-personnalisation {
+    flex-direction : column;
+    /* border : 2px solid blue; */
+}
+
+
+.perso-title {
+    margin-bottom : 7%;
+    /* border : 2px solid red; */
+} 
+
+.perso-accueil p {
+    margin-top : 3%;
+    font-size : .9em;
+}
+
+.btn-typo {
+    padding : 3.1%;
+    margin-top :6%;
+    margin-left : 32%;
+    font-size: 1em;
+}
+
+.btn-color{
+    padding : 3.1%;
+    margin-top :6%;
+    margin-left : 35%;
+    font-size: 1em;
+}
+
+.btn-msg{
+    padding : 3.1%;
+    margin-top :6%;
+    margin-left : 34%;
+    font-size: 1em;
+}
+
+      
+}
+
+/* 
+// Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* body{
+        background-color: yellow;
+    }  */
+
+
+.presentation-page-personnalisation {
+    margin-top : 1%;
+    margin-bottom : 1%;
+     /* border : 2px solid red; */
+}
+
+.bg-section-personnalisation-black {
+  margin-top : 1%;
+  margin-bottom : 1%;
+}
+
+
+.perso-accueil p {
+    font-size : .9em;
+}
+
+.perso-accueil img {
+     /* border : 2px solid red; */
+     margin-top : 20%;
+}
+
+.btn-typo {
+    padding : 3%;
+    margin-top :5%;
+    margin-left : 10%;
+    font-size: .9em;
+}
+
+.btn-color{
+    padding : 3%;
+    margin-top :14%;
+    margin-left : 14%;
+    font-size: 1em;
+}
+
+.btn-msg{
+    padding : 3%;
+    margin-top :14%;
+    margin-left : 15%;
+    font-size: 1em;
+}
+
+  
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* body{
+        background-color: red;
+    }   */
+            
+
+.presentation-page-personnalisation {
+    margin-top : 1%;
+    margin-bottom : 1%;
+     /* border : 2px solid red; */
+}
+
+.bg-section-personnalisation-black {
+  margin-top : 1%;
+  margin-bottom : 1%;
+}
+
+.perso-accueil img {
+     /* border : 2px solid red; */
+     margin-top : 15%;
+}
+
+.btn-typo {
+    padding : 3%;
+    margin-top :8%;
+    margin-left : 10%;
+    font-size: .9em;
+}
+
+.btn-color{
+    padding : 3%;
+    margin-top :14%;
+    margin-left : 14%;
+    font-size: 1em;
+}
+
+.btn-msg{
+    padding : 3%;
+    margin-top :14%;
+    margin-left : 15%;
+    font-size: 1em;
+}
+
+             
+ 
+}
+
+
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    /* body{
+        background-color: green;
+    } */
+}
+
+
+
+/* ---------------------------------------------PAGE CONTACT------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+
+
+.title-contact{
+    font-size: 1.5em;
+    text-align : center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top : 8%;
+    margin-bottom : 6%;
+}
+
+
+.obligatoire {
+    font-size : .85em;
+    width: 50%; 
+    margin : 3% auto;   
+}
+
+
+/* -----------formulaire------ */
+form {
+    width: 50%; 
+    min-height : 600px;
+    /* centrer le formulaire */
+    margin : 3% auto;
+    background: #000;
+    padding : 6%;
+    }
+
+fieldset {
+    border : 2px solid white;
+    margin-bottom : 10px;
+    padding : 0 15px;
+      }
+
+legend {
+    color: white;
+    font-weight : 700;
+    padding : 0 10px;
+      }
+    
+input, select {
+    width: 100%; 
+    height : 40px;
+    margin : 1% auto;
+    padding-left :1%;
+        }
+
+::placeholder {
+    color: grey;
+    padding-left :1%;
+        }
+
+textarea {
+    width : 100%;
+    min-height : 150px;
+    resize : none; /* Pour garder le carré fixe */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size : .9em;
+    }
+
+div.check {
+    margin-top : 5%;
+    width : 100%;
+    height : 40px;
+        }
+        
+div.check>input[type="checkbox"]{
+    float : left;
+    width : 20px;
+    height : 20px;
+    margin : 0 3%;;
+    /* reset des marges */
+        }
+
+div.check> label {
+    font-style : oblique;
+    color : white;
+        }
+
+input[type="submit"] {
+    cursor : pointer;
+    width : 20%;
+    margin-left : 40%;
+    color: black;
+    font-weight : 700;
+    background-color: white;
+    border : 2px solid white;
+    border-radius : 5px;
+    }
+
+/******************* RESPONSIVE PAGE CONTACT*************************/
+
+ /* X-Small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) {
+    /* body{
+        background-color: pink;
+    } */
+   
+.title-contact{
+    font-size: 1.3em;   
+}
+
+.introduction {
+    font-size : .9em;
+   
+}
+
+.obligatoire {
+    font-size : .8em;
+}
+
+form { 
+    margin : 3% auto;
+    padding : 6%;
+    }
+
+fieldset {
+    font-size : .9em;
+      }
+
+::placeholder {
+    font-size : .9em;
+        }
+
+        
+div.check>input[type="checkbox"]{
+    width : 14px;
+        }
+
+div.check> label {
+    font-size : .9em;
+        }
+
+input[type="submit"] {
+    width : fit-content;
+    padding : 2%;
+    margin-left : 36%;
+    font-weight : 900;
+    }
+      
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* body{
+        background-color: blue;
+    } */
+
+       
+.title-contact{
+    font-size: 1.4em;   
+}
+
+.introduction {
+    font-size : .9em;
+   
+}
+
+.obligatoire {
+    font-size : .85em;
+}
+
+form { 
+    margin : 4% auto;
+    padding : 6%;
+    }
+
+fieldset {
+    font-size : .95em;
+      }
+
+::placeholder {
+    font-size : 1em;
+        }
+        
+div.check>input[type="checkbox"]{
+    width : 14px;
+        }
+
+div.check> label {
+    font-size : .9em;
+        }
+
+input[type="submit"] {
+    width : fit-content;
+    padding : 2%;
+    margin-left : 39%;
+    font-weight : 900;
+    }
+      
+}
+
+/* 
+// Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* body{
+        background-color: yellow;
+    }  */
+   
+    form { 
+        margin : 4% auto;
+        padding : 6%;
+        }
+    
+            
+    div.check>input[type="checkbox"]{
+        width : 16px;
+            }
+    
+    /* div.check> label {
+        font-size : .9em;
+            } */
+    
+    input[type="submit"] {
+        width : fit-content;
+        padding : 2%;
+        margin-left : 39%;
+        font-weight : 900;
+        }
+  
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* body{
+        background-color: red;
+    }   */
+            
+    div.check>input[type="checkbox"]{
+        width : 16px;
+            }
+    
+    input[type="submit"] {
+        width : fit-content;
+        padding : 2%;
+        margin-left : 41%;
+        font-weight : 900;
+        }
+             
+ 
+}
+
+
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    /* body{
+        background-color: green;
+    } */
+}
+
+
+/* ------------------------------------------PAGE PANIER--------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+      
+
+.title-panier {
+    font-size: 1.5em;
+    text-align : center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top : 8%;
+    margin-bottom : 6%;
+}
+
+
+.container-liste-produits-panier{
+    width: 40%;
+    margin : 6% auto;
+    padding : 8%;
+    background: rgb(219, 219, 219);
+    /* border : 2px solid red; */
+    display : flex;
+    flex-direction : column;
+}
+
+.item-panier {
+    margin-top : 6%;
+    padding :3%;
+    border : 2px solid black;
+}
+
+.item-panier img {
+    height : 230px;
+    margin-top : 3%;
+    /* border : 2px solid black; */
+}
+
+.item-panier p {
+    font-size : 1.2em;
+    font-weight: bold;
+    width: fit-content;
+    /* border : 2px solid purple; */
+    transform: translateY(-130px); 
+    margin-left : 51%;
+    margin-top : 2%;    
+}
+
+
+.item-panier button{
+    margin-right : 3%;
+    margin-bottom : 4%;
+    background: #000;
+    border : 1px solid black;
+    border-radius : 10px;
+    padding : 2%;
+    color : white;
+    /* border : 2px solid chartreuse; */
+}
+
+
+
+.total-commande {
+    color : black;
+    font-weight: bold;
+    font-size : 2em;
+    transform: translateX(210px);
+    width: fit-content;
+    border-top : 2px solid black;
+    padding-top : 2%;
+    margin-top : 11%;
+    margin-bottom : 7%;
+}
+
+.bouton-supprimer-panier,
+#bouton-valider-commande {
+    color : black;
+    font-weight: bold;
+    width: 90%;
+    box-sizing: border-box;
+    padding : 3%;
+    border-radius : 10px;    
+    margin : auto;
+}
+
+
+.bouton-supprimer-panier {
+    /* padding : 3%; */
+    margin-top : 7%;
+    margin-bottom : 3%;
+    background: red;
+    border : 1px solid red;
+}
+
+#bouton-valider-commande {
+    margin : auto;
+    background: rgb(69, 233, 69); 
+    border : 1px solid rgb(69, 233, 69); 
+}
+
+
+
+
+
+
+ /* CSS modal Source : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal  */
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/******************* RESPONSIVE PAGE PANIER ************************/
+
+ /* X-Small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) {
+    /* body{
+        background-color: pink;
+    } */
+
+    
+.title-panier {
+    font-size: 1.3em; 
+}
+
+.container-liste-produits-panier{
+    display : block;
+    /* border : 2px solid blue; */
+}
+
+.item-panier {
+    margin-top : 6%;
+    padding : 2%;
+    border : 2px solid black;
+    display : block;
+}
+
+.item-panier img {
+    height : 150px;
+    /* border : 2px solid red; */
+    display : block;
+    margin : 5% auto;    
+}
+
+.item-panier p {
+    font-size : .9em;
+    /* border : 2px solid purple; */
+    transform: translateY(-1px); 
+    margin-bottom : 5%;  
+    margin-left : 0;  
+}
+
+
+.item-panier button{
+    margin-left : 25%;
+    margin-bottom : 7%;
+    font-size : .7em;
+    /* display : block; */
+    /* border : 2px solid chartreuse; */
+}
+
+.total-commande {
+    font-size : 1.5em;
+    transform: translateY(-1px); 
+    margin-bottom : 5%;  
+    margin-left : 0; 
+    border-top : none;
+    width: fit-content;
+    padding-top : 2%;
+    margin-top : 3%;
+    margin-bottom : 7%;
+}
+
+.bouton-supprimer-panier,
+#bouton-valider-commande {
+    width: 100%;
+    box-sizing: border-box;
+    padding : 6%;
+    border-radius : 10px;    
+    margin : auto;
+}
+
+
+.bouton-supprimer-panier {
+    /* padding : 3%; */
+    margin-top : 7%;
+    margin-bottom : 3%;
+    background: red;
+    border : 1px solid red;
+}
+
+#bouton-valider-commande {
+    margin : auto;
+    background: rgb(69, 233, 69); 
+    border : 1px solid rgb(69, 233, 69);  
+}
+
+      
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* body{
+        background-color: blue;
+    } */
+
+        
+    .title-panier {
+        font-size: 1.3em; 
+    }
+
+    .container-liste-produits-panier{
+        display : block;
+        /* border : 2px solid blue; */
+    }
+
+    .item-panier {
+        margin-top : 6%;
+        padding : 2%;
+        border : 2px solid black;
+        display : block;
+    }
+
+    .item-panier img {
+        height : 190px;
+        /* border : 2px solid red; */
+        display : block;
+        margin : 5% auto;    
+    }
+
+    .item-panier p {
+        font-size : .9em;
+        /* border : 2px solid purple; */
+        transform: translateY(-1px); 
+        margin-bottom : 5%;  
+        margin-left : 0;  
+    }
+
+
+    .item-panier button{
+        margin-left : 25%;
+        margin-bottom : 7%;
+        font-size : .7em;
+        /* display : block; */
+        /* border : 2px solid chartreuse; */
+    }
+
+
+
+    .total-commande {
+        font-size : 1.5em;
+        transform: translateY(-1px); 
+        margin-bottom : 5%;  
+        margin-left : 0; 
+        border-top : none;
+        width: fit-content;
+        padding-top : 2%;
+        margin-top : 3%;
+        margin-bottom : 7%;
+    }
+
+    .bouton-supprimer-panier,
+    #bouton-valider-commande {
+        width: 100%;
+        box-sizing: border-box;
+        padding : 6%;
+        border-radius : 10px;    
+        margin : auto;
+    }
+
+
+    .bouton-supprimer-panier {
+        /* padding : 3%; */
+        margin-top : 7%;
+        margin-bottom : 3%;
+        background: red;
+        border : 1px solid red;
+    }
+
+    #bouton-valider-commande {
+        margin : auto;
+        background: rgb(69, 233, 69); 
+        border : 1px solid rgb(69, 233, 69);  
+    }
+
+
+
+
+      
+}
+
+/* 
+// Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* body{
+        background-color: yellow;
+    }  */
+        
+    .title-panier {
+        font-size: 1.4em; 
+    }
+
+    .container-liste-produits-panier{
+        display : block;
+        /* border : 2px solid blue; */
+    }
+
+    .item-panier {
+        margin-top : 6%;
+        padding : 2%;
+        border : 2px solid black;
+        display : block;
+    }
+
+    .item-panier img {
+        height : 210px;
+        /* border : 2px solid red; */
+        display : block;
+        margin : 5% auto;    
+    }
+
+    .item-panier p {
+        font-size : 1em;
+        /* border : 2px solid purple; */
+        transform: translateY(-1px); 
+        margin-bottom : 5%;  
+        margin-left : 15%;  
+    }
+
+
+    .item-panier button{
+        margin-left : 25%;
+        margin-bottom : 7%;
+        font-size : .7em;
+        /* display : block; */
+        /* border : 2px solid chartreuse; */
+    }
+
+
+
+    .total-commande {
+        font-size : 1.5em;
+        transform: translateY(-1px); 
+        margin-bottom : 5%;  
+        margin-left : 0; 
+        border-top : none;
+        width: fit-content;
+        padding-top : 2%;
+        margin-top : 15%;
+        margin-bottom : 7%;
+    }
+
+    .bouton-supprimer-panier,
+    #bouton-valider-commande {
+        width: 100%;
+        box-sizing: border-box;
+        padding : 6%;
+        border-radius : 10px;    
+        margin : auto;
+    }
+
+
+    .bouton-supprimer-panier {
+        /* padding : 3%; */
+        margin-top : 7%;
+        margin-bottom : 3%;
+        background: red;
+        border : 1px solid red;
+    }
+
+    #bouton-valider-commande {
+        margin : auto;
+        background: rgb(69, 233, 69); 
+        border : 1px solid rgb(69, 233, 69);  
+    }
+
+  
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* body{
+        background-color: red;
+    }   */
+    .title-panier {
+        font-size: 1.4em; 
+    }
+
+    .container-liste-produits-panier{
+        display : block;
+        /* border : 2px solid blue; */
+    }
+
+    .item-panier {
+        margin-top : 6%;
+        padding : 2%;
+        border : 2px solid black;
+        display : block;
+    }
+
+    .item-panier img {
+        height : 250px;
+        /* border : 2px solid red; */
+        display : block;
+        margin : 5% auto;    
+    }
+
+    .item-panier p {
+        font-size : 1em;
+        /* border : 2px solid purple; */
+        transform: translateY(-1px); 
+        margin-bottom : 5%;  
+        margin-left : 15%;  
+    }
+
+
+    .item-panier button{
+        margin-left : 25%;
+        margin-bottom : 7%;
+        font-size : .7em;
+        /* display : block; */
+        /* border : 2px solid chartreuse; */
+    }
+
+
+
+    .total-commande {
+        font-size : 1.5em;
+        transform: translateY(-1px); 
+        margin-bottom : 5%;  
+        margin-left : 0; 
+        border-top : none;
+        width: fit-content;
+        padding-top : 2%;
+        margin-top : 15%;
+        margin-bottom : 7%;
+    }
+
+    .bouton-supprimer-panier,
+    #bouton-valider-commande {
+        width: 100%;
+        box-sizing: border-box;
+        padding : 6%;
+        border-radius : 10px;    
+        margin : auto;
+    }
+
+
+    .bouton-supprimer-panier {
+        /* padding : 3%; */
+        margin-top : 7%;
+        margin-bottom : 3%;
+        background: red;
+        border : 1px solid red;
+    }
+
+    #bouton-valider-commande {
+        margin : auto;
+        background: rgb(69, 233, 69); 
+        border : 1px solid rgb(69, 233, 69);  
+    }
+            
+   
+             
+ 
+}
+
+
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    /* body{
+        background-color: green;
+    } */
+}

@@ -1,0 +1,606 @@
+.header{
+    width: 100%;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.HeaderSmallScreen{
+    display : none;
+}
+
+#show-nav {
+    display : none;
+}
+
+.burger {
+    display : none;
+}
+.container-nav {
+    display : flex;
+}
+    
+.logo-accueil {
+    width: 130px;
+    flex : 1;
+    padding-left : 29%;
+    padding-top  : 7%;
+   
+}
+
+.navigation-menu {
+    display : flex;   
+}
+
+.liens {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight : bold;
+    font-size: 1em;
+    text-transform: uppercase; 
+    color: #320D3E;
+    flex : 1;
+    padding-top : 8%;
+    padding-bottom : 8%;
+    padding-left: 22% ;
+    padding-right: 12% ;
+    transition : all .2s ease;
+}
+
+.liens a {
+    text-decoration: none;
+    flex : 1;
+    color : #95F0C8;
+    flex-wrap: nowrap;
+    transition : all .2s ease;
+    padding : 10%;
+}
+
+.liens a:hover {
+    color: black;
+    background-color: #95F0C8;
+    transition : all .2s ease;
+    /* border-top : 7px solid #237e57; */
+}
+
+.panier {
+    padding-top : 4%;
+    padding-left: 5% ;
+    padding-right: 1% ;
+    display : inline-block;
+    position : absolute;
+    right : 8vw;
+    top : -5.5vh;
+    
+}
+
+.fa-shopping-basket {
+    color :  #95F0C8;
+    font-size: 1.8em;
+    /* border : 1px solid red;  */
+}
+
+
+.total-panier-navbar {
+    color :  pink;
+    padding-top : 4%;
+    padding-left: 5% ;
+    padding-right: 1% ;
+    font-weight : 900;
+    display : inline-block;
+    position : absolute;
+    right : 7.8vw;
+    top : -7vh;
+}
+
+ 
+/******************* RESPONSIVE MENU NAVIGATION ************************/
+
+ /* X-Small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) {
+    /* body{
+        background-color: pink;
+    } */
+
+    .DivHeader,
+     #show-nav 
+    {
+        display : none;
+    }
+
+  
+    .HeaderSmallScreen{
+        display : flex;  
+        justify-content: space-between;      
+    }
+
+    .burger {
+        display : block;
+        font-weight: bold;
+        font-size : 1.2em;
+        color : #95F0C8;
+        padding-top : 9%;
+        margin-left : 10%;
+    }
+ 
+    .logo-accueil {
+        width: 100px;
+        padding : 6%;
+        margin-left : 140%;
+    }
+
+
+    .panier-small-screen {
+        font-size : .7em;
+    } 
+
+    .panier-small-screen  {
+        padding-top : 4%;
+        padding-left: 5% ;
+        padding-right: 1% ;
+        display : inline-block;
+        position : absolute;
+        right : 8vw;
+        top : -1vh;
+        
+    }
+
+    span {
+        /* border : 2px solid white; */
+        color : pink;
+        width: fit-content;
+        position: absolute;
+        right : 9vw;
+        font-size : 1em;
+        font-weight : bold;      
+    }
+    
+        
+    }
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* body{
+        background-color: blue;
+    } */
+    .DivHeader,
+    #show-nav 
+   {
+       display : none;
+   }
+
+ 
+   .HeaderSmallScreen{
+       display : flex;  
+       justify-content: space-between;      
+   }
+
+   .burger {
+       display : block;
+       font-weight: bold;
+       font-size : 1.2em;
+       color : #95F0C8;
+       padding-top : 9%;
+       margin-left : 10%;
+   }
+
+   .logo-accueil {
+       width: 100px;
+       padding : 6%;
+       margin-left : 180%;
+       
+   }
+
+
+   
+    .panier-small-screen {
+        font-size : .7em;
+    } 
+
+    .panier-small-screen  {
+        padding-top : 4%;
+        padding-left: 5% ;
+        padding-right: 1% ;
+        display : inline-block;
+        position : absolute;
+        right : 8vw;
+        top : -1vh;
+        
+    }
+
+    span {
+        /* border : 2px solid white; */
+        color : pink;
+        width: fit-content;
+        position: absolute;
+        right : 9vw;
+        font-size : 1em;
+        font-weight : bold;  
+        padding-top : 1%;    
+    }
+
+
+  
+}
+
+/* 
+// Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* body{
+        background-color: yellow;
+    }  */
+    .DivHeader,
+    #show-nav 
+   {
+       display : none;
+   }
+
+ 
+   .HeaderSmallScreen{
+       display : flex;  
+       justify-content: space-between;      
+   }
+
+   .burger {
+       display : block;
+       font-weight: bold;
+       font-size : 1.2em;
+       color : #95F0C8;
+       padding-top : 9%;
+       margin-left : 10%;
+   }
+
+   .logo-accueil {
+       width: 100px;
+       padding : 6%;
+       margin-left : 240%;
+   }
+
+   .panier-small-screen {
+       margin-left : 350%;
+       font-size : .7em;
+       padding-top : 8%;
+   } 
+
+
+    
+    .panier-small-screen {
+        font-size : .7em;
+    } 
+
+    .panier-small-screen  {
+        padding-top : 4%;
+        padding-left: 5% ;
+        padding-right: 1% ;
+        display : inline-block;
+        position : absolute;
+        right : 8vw;
+        top : -2.5vh;
+        
+    }
+
+    span {
+        /* border : 2px solid white; */
+        color : pink;
+        width: fit-content;
+        position: absolute;
+        right : 9vw;
+        font-size : 1em;
+        font-weight : bold;  
+        padding-top : 1%;    
+    }
+ 
+
+  
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* body{
+        background-color: red;
+    }   */
+    
+    .HeaderSmallScreen{
+        display : none;
+    }
+    
+    #show-nav {
+        display : none;
+    }
+    
+    .burger {
+        display : none;
+    }
+        
+    .logo-accueil {
+        width: 120px;
+        padding-left : 25%;
+        padding-top  : 7%;
+    }
+    
+    .navigation-menu {
+        display : flex;   
+    }
+    
+    .liens {
+        font-size: .9em;
+        padding-left: 20% ;
+        padding-right: 10% ;
+      
+    }
+    
+    .liens a {
+        padding : 9%;
+    }
+    
+    
+    .panier {
+        right : 3vw;
+        top : -3.5vh;
+        
+    }
+    
+    .fa-shopping-basket {
+        font-size: 1.3em;
+        /* border : 1px solid red;  */
+    }
+    
+    
+    .total-panier-navbar {
+        right : 2.8vw;
+        top : -5vh;
+    }
+    
+            
+              
+ 
+}
+
+
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    /* body{
+        background-color: green;
+    } */
+}
+
+
+
+/* -----------------SECTION HERO----------------------------------------------------------------- */
+
+
+main > figure > img {
+width: 100%;
+}
+
+main > figure > img::after {
+    content: '';
+    border-collapse: collapse;
+    }
+
+
+.rectangleBouge {
+height: 20vh;
+width: 32vw;
+background: rgb(000, 000, 000, .8);
+position: absolute;
+top: 10vh;
+left: 63vw;
+line-height : 6vh;
+animation: 4s linear 1s apparition;
+
+}
+
+/* animation */
+
+    @keyframes apparition{ 
+       
+   0% {opacity : 0; left : 0vw;}
+   50% { opacity : 0; left: 31vw; } 
+   100% { opacity : 1; left: 63vw;}
+}
+
+ 
+.plusBoutique {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #95F0C8;
+    font-size: 2em;   
+    transform: scale(0.5);
+    
+}
+
+
+
+/******************* RESPONSIVE HERO SECTION  ************************/
+
+ /* X-Small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) {
+    /* body{
+        background-color: pink;
+    } */
+
+    
+    .rectangleBouge {
+    height: 14vh;
+    width: 35vw;
+    position: absolute;
+    top: 40vh;
+    left: 57vw;
+    line-height : 3vh;
+    animation: 4s linear 0s apparition;
+    }
+
+    /* animation */
+ 
+    @keyframes apparition{
+       
+    0% {opacity : 0; left : 0;}
+    50% { opacity : 0; left: 26vw; } 
+    100% { opacity : 1; left: 57vw;}
+         }
+    
+    .plusBoutique {
+        font-size: 1.2em;   
+        transform: scale(0.6);       
+    }
+
+      
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* body{
+        background-color: blue;
+    } */
+    .rectangleBouge {
+        height: 14vh;
+        width: 35vw;
+        position: absolute;
+        top: 48vh;
+        left: 57vw;
+        line-height : 3.2vh;
+        animation: 4s linear 0s apparition;
+        }
+
+        /* animation */
+ 
+        @keyframes apparition{
+       
+        0% {opacity : 0; left : 0;}
+        50% { opacity : 0; left: 26vw; } 
+        100% { opacity : 1; left: 57vw;}
+             }
+        
+    .plusBoutique {
+        font-size: 1.3em;   
+        transform: scale(0.6);       
+        }
+
+
+      
+}
+
+/* 
+// Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* body{
+        background-color: yellow;
+    }  */
+
+    .rectangleBouge {
+        height: 14vh;
+        width: 35vw;
+        position: absolute;
+        top: 67vh;
+        left: 57vw;
+        line-height : 3.5vh;
+        animation: 4s linear 0s apparition;
+        }
+
+           /* animation */
+ 
+    @keyframes apparition{
+       
+     0% {opacity : 0; left : 0;}
+    50% { opacity : 0; left: 26vw; } 
+    100% { opacity : 1; left: 57vw;}
+         }
+        
+    .plusBoutique {
+        font-size: 1.4em;   
+        transform: scale(0.6);       
+        }
+
+
+  
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* body{
+        background-color: red;
+    }   */
+            
+              
+    .rectangleBouge {
+        height: 14vh;
+        width: 35vw;
+        position: absolute;
+        top: 90vh;
+        left: 57vw;
+        line-height : 3.5vh;
+        animation: 4s linear 0s apparition;
+        }
+        @keyframes apparition{
+       
+            0% {opacity : 0; left : 0;}
+           50% { opacity : 0; left: 26vw; } 
+           100% { opacity : 1; left: 57vw;}
+                }
+               
+    .plusBoutique {
+        font-size: 1.4em;   
+        transform: scale(0.6);       
+        }
+ 
+}
+
+
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    /* body{
+        background-color: green;
+    } */
+
+                
+    .rectangleBouge {
+        height: 14vh;
+        width: 35vw;
+        position: absolute;
+        top: 110vh;
+        left: 57vw;
+        line-height : 3.5vh;
+        animation: 4s linear 1s apparition;
+        }
+         @keyframes apparition{ 
+       
+            0% {opacity : 0; left : 0;}
+           50% { opacity : 0; left: 26vw; } 
+           100% { opacity : 1; left: 57vw;}
+                }
+          
+    .plusBoutique {
+        font-size: 1.5em;   
+        transform: scale(0.6);       
+        }
+}
+
+@media (min-width: 1400px) {
+    /* body{
+        background-color: black;
+    } */
+
+                
+    .rectangleBouge {
+        height: 14vh;
+        width: 35vw;
+        position: absolute;
+        top: 125vh;
+        left: 57vw;
+        line-height : 3.5vh;
+        animation: 4s linear 1s apparition;
+        }
+        @keyframes apparition{
+       
+            0% {opacity : 0; left : 0;}
+           50% { opacity : 0; left: 26vw; } 
+           100% { opacity : 1; left: 57vw;}
+                }
+        
+    .plusBoutique {
+        font-size: 1.5em;   
+        transform: scale(0.6);       
+        }
+}
+
